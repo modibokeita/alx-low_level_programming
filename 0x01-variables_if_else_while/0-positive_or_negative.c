@@ -14,14 +14,14 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		return (&n,"%d is posive");
+		return ("%d is posive",n);
 	}
 	if (n < 0)
 	{
-		return (&n,"%d is negative");
+		return ("%d is negative",n);
 	}
 	if (n == 0)
 	{
-		return (&n,"%d is zero");
+		return ("%d is zero",n);
 	}
 }
