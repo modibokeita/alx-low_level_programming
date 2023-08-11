@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+  * main - prints alphabets in lowercase
+  * Return: always success
+  */
 int main(void)
 {
 	char c;
