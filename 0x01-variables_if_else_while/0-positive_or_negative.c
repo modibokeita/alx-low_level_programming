@@ -14,14 +14,14 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf(n,"%d is posive");
+		puts(&n,"%d is posive");
 	}
 	if (n < 0)
 	{
-		printf(n,"%d is negative");
+		puts(&n,"%d is negative");
 	}
 	if (n == 0)
 	{
-		printf(n,"%d is zero");
+		puts(&n,"%d is zero");
 	}
 }
