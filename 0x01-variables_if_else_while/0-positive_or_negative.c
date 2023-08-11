@@ -14,15 +14,15 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-	 	printf("%d is ",&n);
+	 	return (n);
 	}
 	if (n == 0)
 	{
-		printf("%d is ",&n);
+		return (n);
 	}
 	if (n < 0 )
 	{
-		printf("%d is ",&n);
+		return (n);
 	}
 	return (0);
 }
