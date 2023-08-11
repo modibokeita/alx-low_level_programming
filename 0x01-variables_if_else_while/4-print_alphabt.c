@@ -7,11 +7,11 @@ int main(void)
 {
 	char letter[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (i = 0; i <= letter; letter++)
 	{
-		if (letter != 'q' || letter != 'e')
+		if (i != 'q' || i != 'e')
 		{
-			putchar(letter);
+			putchar(i);
 		}
 	}
 	return (0);
