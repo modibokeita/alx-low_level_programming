@@ -5,14 +5,15 @@
   */
 int main(void)
 {
-	char letter[26] = "abcdefghijklmnopqrstuvwxyz";
+	char letter;
 
-	for (i = 0; i <= letter; letter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if (i != 'q' || i != 'e')
+		if (letter != 'q' && letter != 'e')
 		{
-			putchar(i);
+			putchar(letter);
 		}
 	}
+	putchar('\n');
 	return (0);
 }
