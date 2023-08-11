@@ -12,17 +12,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n>0)
+	if (n > 0)
 	{
-		return (n);
+	 	printf("%d is ",n);
 	}
-	if (n==0)
+	if (n == 0)
 	{
-		return (n);
+		printf("%d is ",n);
 	}
-	if (n<0)
+	if (n < 0 )
 	{
-		return (n);
+		printf("%d is ",n);
 	}
 	return (0);
 }
