@@ -6,21 +6,13 @@
   */
 int _islower(int c)
 {
-	int ch = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	int letter 'abcdefghijklmnopqrstuvwxyz';
 
-	for (ch = c; ch <= c; ch++)
+	if (c == 'a' || c == 'b' || c == 'd' || c == 'e' || c == 'f' || c == 'g' || c == 'h' || 'i' || 'j' || c == 'k' || c == 'l' || c == 'm' || c == 'n' || c == 'o' || c == 'p' || c == 'q' || c == 'r' || c == 's' || c == 't' || c == 'u' || c == 'v' || c == 'w' || c == 'x' || c == 'y' || c == 'z')
 	{
-		for (letter = c; letter <= c; letter++)
-		{
-			if (c == letter)
-			{
-				return (1);
-			}
-			else
-			{
-				return (0);
-			}
-		}
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
