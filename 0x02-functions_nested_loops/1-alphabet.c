@@ -5,7 +5,7 @@
   * Return: always 0
   */
 void print_alphabet(void)
-i{
+{
 	char ch;
 	for (ch = 'a'; ch < 'z'; ch++)
 	{
