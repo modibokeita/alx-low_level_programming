@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
-  * main - prints alphabet
+  * print_alphabet - prints alphabet
   * Return: always 0
   */
 void print_alphabet(void)
