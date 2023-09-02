@@ -9,7 +9,7 @@ int check_num(char *str);
   * main - adds positive numbers
   * @argc: the size of argv
   * @argv: argument vector
-  * Return: 0 
+  * Return: 0
   */
 int main(int argc, char *argv[])
 {
@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 int check_num(char *str)
 {
 	unsigned int count;
+
 	count = 0;
 
 	while (count < strlen(str))
