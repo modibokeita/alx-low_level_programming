@@ -8,11 +8,11 @@
   */
 void print_all(const char * const format, ...)
 {
-	int i = 0;
-	int flag;
+	int i = 0, flag;
 	char *str;
 
 	va_list a_list;
+
 	va_start(a_list, format);
 
 	while (format != NULL && format[i] != '\0')
@@ -48,5 +48,4 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(a_list);
-
 }
