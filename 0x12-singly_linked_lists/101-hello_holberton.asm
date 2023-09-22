@@ -15,6 +15,6 @@ main:
 	call printf
 
 	pop rdi
-	
+
 
 	ret
