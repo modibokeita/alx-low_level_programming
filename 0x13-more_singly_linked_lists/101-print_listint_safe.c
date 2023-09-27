@@ -7,11 +7,11 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *first, *second;
-
 	size_t count = 0;
 
 	if (head == NULL)
 		return (0);
+
 	first = head;
 	second = head->next;
 
