@@ -11,26 +11,17 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int binary = 0;
-	unsigned int base = 1;
-	int i, len = 0;
 
 	if (b == NULL)
 		return (0);
 
-	while (b[len] != '\0')
+	while (*b)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (*b != '0' && *b != '1')
 			return (0);
-		len++;
+		binary = (binary << 1) | (*b - '0');
+		b++;
 	}
 
-	for (i = len - 1; i >= 0; i--)
-	{
-		if (b[i] == '1')
-		{
-			binary += base;
-			base *= 2;
-		}
-	}
 	return (binary);
 }
