@@ -7,25 +7,26 @@
   */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	FILE *fp;
-	int add;
+	int fd, b_written = 0;
 
 	if (filename == NULL)
 		return (-1);
 
-	if (text_content != NULL)
+	if (text_content == NULL)
 	{
 		return (1);
 	}
-	fp = fopen(filename, "a");
+	fd = open(filename, O_WRONLY | O_APPEND);
 
-	if (fp == NULL)
-		return (-1);
-	add = fputs(text_content, fp);
-
-	if (fclose(fp) == EOF)
+	if (fd == -1)
 		return (-1);
 
-	return ((add == EOF) ? -1 : 1);
+	while (text_content[b_written] != '\0')
+	{
+		b_written += write(fd, text_content + b_written, 1);
+	}
 
+	if (close(fd) == -1)
+		return (-1);
+	return (1);
 }
