@@ -7,13 +7,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, byte;
-	int num_byte = sizeof(unsigned long int) * 2;
+	if (n > 1)
+		print_binary(n >> 1);
 
-	for (i = num_byte - 1; i >= 0; i--)
-	{
-		byte = (n >> i) & 1;
-		_putchar(byte + '0');
-	}
-	_putchar('\n');
+	_putchar((n & 1) + '0');
 }
